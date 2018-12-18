@@ -1,4 +1,4 @@
-FROM babim/centos7base
+FROM babim/debianbase:9
 
 # option
 RUN yum install -y wget bash && cd / && wget --no-check-certificate https://raw.githubusercontent.com/babim/docker-tag-options/master/z%20SCRIPT%20AUTO/option.sh && \
