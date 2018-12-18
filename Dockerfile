@@ -12,7 +12,7 @@ RUN wget --no-check-certificate -O - https://raw.githubusercontent.com/babim/doc
 # Define mountable directories.
 VOLUME ["/usr/local/lsws"]
 
-EXPOSE 80 443
+EXPOSE 80 443 8088 7080
 
 # no supervisor
 RUN touch /nosupervisor
