@@ -1,4 +1,4 @@
-FROM babim/debianbase:8
+FROM babim/debianbase:10
 
 # option
 RUN apt-get update && \
