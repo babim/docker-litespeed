@@ -1,4 +1,4 @@
-FROM babim/debianbase:9
+FROM babim/debianbase:10
 
 # option
 RUN apt-get update && \
@@ -7,7 +7,7 @@ RUN apt-get update && \
     chmod 755 /option.sh
 
 # install litespeed and PHP
-ENV PHP_VERSION 7.3
+ENV PHP_VERSION 7.4
 #ENV BUILDMODE on
 RUN curl -s https://raw.githubusercontent.com/babim/docker-tag-options/master/z%20PHP%20install/litespeed_install.sh | bash
 
